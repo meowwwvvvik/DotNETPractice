@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStructures", "MyStructures\MyStructures\MyStructures.csproj", "{6EB42A3A-7A70-4AB5-85AF-D5364368BDF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belyashik", "Belyashik\Belyashik\Belyashik.csproj", "{B4D0FF1E-101C-408E-920F-14B71905B8C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EB42A3A-7A70-4AB5-85AF-D5364368BDF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB42A3A-7A70-4AB5-85AF-D5364368BDF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB42A3A-7A70-4AB5-85AF-D5364368BDF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB42A3A-7A70-4AB5-85AF-D5364368BDF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4D0FF1E-101C-408E-920F-14B71905B8C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4D0FF1E-101C-408E-920F-14B71905B8C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4D0FF1E-101C-408E-920F-14B71905B8C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4D0FF1E-101C-408E-920F-14B71905B8C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
