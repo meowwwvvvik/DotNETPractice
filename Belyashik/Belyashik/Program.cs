@@ -1,25 +1,3 @@
-﻿using Test;
+﻿// See https://aka.ms/new-console-template for more information
 
-var list = new MyList();
-
-// Exist
-list.Add(2);
-Console.WriteLine(list.Exist(2)); // true
-Console.WriteLine(list.Exist(3)); // false
-
-list.Clear();
-
-// AddRange
-list.AddRange(new []{11, 22, 33});
-Console.WriteLine(list.Get(0)); // 11
-Console.WriteLine(list.Get(1)); // 22
-Console.WriteLine(list.Get(2)); // 33
-
-list.Clear();
-
-// GetRange
-list.AddRange(new []{11, 22, 33, 44, 55});
-var result = list.GetRange(2, 4);
-Console.WriteLine(result.Get(0)); // 33
-Console.WriteLine(result.Get(1)); // 44
-Console.WriteLine(result.Get(2)); // 55
+Console.WriteLine("Hello, World!");
