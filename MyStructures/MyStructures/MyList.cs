@@ -1,6 +1,4 @@
-﻿using System.Security.AccessControl;
-
-namespace Test
+﻿namespace MyStructures
 {
   /// <summary>
   /// Список
@@ -9,8 +7,6 @@ namespace Test
   {
     private int[] _array;
     private int _cursor;
-    private MyList _rangeArray;
-
     /// <summary>
     /// Конструктор
     /// </summary>
@@ -54,14 +50,7 @@ namespace Test
     /// <returns>true - если существует, false - если не существует</returns>
     public bool Exist(int item)
     {
-      if (_array.Contains(item))
-      {
-        return true;
-      }
-      else
-      {
-        return false;
-      }
+      return (_array.Contains(item));
     }
 
     /// <summary>
@@ -70,9 +59,15 @@ namespace Test
     /// <param name="startIndex">Индекс начала</param>
     /// <param name="endIndex">Индекс конца</param>
     /// <returns>Список - диапазон</returns>
-    public MyList GetRange(int startIndex, int endIndex)
+    public MyList? GetRange(int startIndex, int endIndex)
     {
-      _rangeArray = new MyList();
+      var _rangeArray = new MyList();
+
+      if (startIndex < 0 || startIndex >= _array.Length || endIndex < 0 || endIndex >= _array.Length)
+      {
+        Console.WriteLine("Index out of range.");
+        return null;
+      }
       for (int i = startIndex; i <= endIndex; i++)
       {
         _rangeArray.Add(_array[i]);

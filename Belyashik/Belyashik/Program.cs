@@ -1,4 +1,4 @@
-﻿using Test;
+﻿using MyStructures;
 
 var list = new MyList();
 
@@ -18,8 +18,8 @@ Console.WriteLine(list.Get(2)); // 33
 list.Clear();
 
 // GetRange
-list.AddRange(new []{11, 22, 33, 44, 55});
-var result = list.GetRange(2, 4);
-Console.WriteLine(result.Get(0)); // 33
-Console.WriteLine(result.Get(1)); // 44
-Console.WriteLine(result.Get(2)); // 55
+list.AddRange(new [] {11, 22, 33});
+var result = list.GetRange(0, 2);
+Console.WriteLine(result.Get(0)); // 11
+Console.WriteLine(result.Get(1)); // 22
+Console.WriteLine(result.Get(2)); // 33
